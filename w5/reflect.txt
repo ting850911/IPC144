@@ -1,0 +1,28 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #5
+Full Name  : Nina Wang
+Student ID#: 148817232
+Email      : ytwang4@myseneca.ca
+Section    : NAA
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1.  
+  No, the "for" iteration construct is not suitable for validating rating values entered by the user in this case. 
+  The "for" loop is typically used when the number of iterations is known in advance, and it follows a specific pattern. 
+  In this case, the number of iterations is determined by the constant LOG_DAYS, but the loop does not follow a specific pattern based on the iteration count. 
+  The "do-while" loop is a better choice because it ensures that the loop body is executed at least once, which is necessary for validating the rating values.
+
+2. 
+  printf("-0%d\n", i + 1);
+  reduce the number of lines of code and make the code more readable
+
+3. 
+  1. Readability and Maintainability: By assigning meaningful names to variables and macros, the code becomes more readable and easier to understand. It also makes it easier to maintain and modify the code in the future. For example, in this workshop, using MIN_YEAR and MAX_YEAR instead of hardcoding the values 2012 and 2022 makes it clear what range of years is valid.
+  2. Flexibility and Reusability: By using variables and macros, we can easily change the values they represent without modifying the code in multiple places. This makes the code more flexible and reusable. For example, if we want to change the range of valid years, we only need to modify the values of MIN_YEAR and MAX_YEAR.
+  3. Avoiding Errors: Using variables and macros helps to avoid errors caused by mistyping or forgetting constant values. It reduces the chances of introducing bugs into the code. For example, if we were to hardcode the month names instead of using a switch statement, there is a higher risk of misspelling or forgetting a month name.

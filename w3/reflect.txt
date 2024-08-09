@@ -1,0 +1,74 @@
+///////////////////////////////////////////////////////////////////////////
+                              Reflection
+                          Workshop - #3 (P2)
+Full Name  : Nina Wang
+Student ID#: 148817232
+Email      : ytwang4@myseneca.ca
+Section    : NAA
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1.
+    declare 8 on my own: coffeeType1, coffeeType2, coffeeType3, cream1, cream2, cream3, customerStrength, customerCream, bagWeight1, bagWeight2, bagWeight3, customerServings
+    and another original constant: GRAMS_IN_LBS, total is 9.
+    if I can use for loop then I can create variables automatically, it'll reduce number of variables, like: coffeeType1, 2, 3 and cream1, 2, 3 and bagWeight1, 2, 3
+    I used to declare all variables on the top inside of block because it's easy to find.
+2.  
+    int compareWeight(int coffeeWight, int customerServings)
+    {
+        return (coffeeWight == 250 && (1 <= customerServings && customerServings < 5)) ||
+               (coffeeWight == 500 && (5 <= customerServings && customerServings < 10)) ||
+               (coffeeWight == 1000 && customerServings >= 10);
+    }
+    Relational Expressions:
+        coffeeWight == 250
+        1 <= customerServings
+        customerServings < 5
+        coffeeWight == 500
+        5 <= customerServings
+        customerServings < 10
+        coffeeWight == 1000
+        customerServings >= 10
+    Logical Expressions:
+        (coffeeWight == 250 && (1 <= customerServings && customerServings < 5))
+        (coffeeWight == 500 && (5 <= customerServings && customerServings < 10))
+        (coffeeWight == 1000 && customerServings >= 10)
+    compareWeight checks whether the combination of coffeeWight and customerServings falls into one of three valid categories.
+    If any of the three combined conditions (using logical OR ||) evaluate to true, the function returns true. Otherwise, it returns false.
+    The relational expressions within each logical expression (&&) check specific ranges and equality conditions.
+3.
+    ¬(A∧B)≡(¬A)∨(¬B)
+    ¬(A∨B)≡(¬A)∧(¬B)
+
+    int isWithCream(char cream)
+    {
+        int withCream = 0;
+        if (cream == 'y' || cream == 'Y')
+        {
+            withCream = 1;
+        }
+        return withCream;
+    }
+
+    int isWithCream(char cream)
+    {
+        int withCream = 0;
+        if (!(cream != 'y' && cream != 'Y'))
+        {
+            withCream = 1;
+        }
+        return withCream;
+    }
+
+    Firstly, I don't think my codes need to use DeMorgan's Laws because it'll cause future maintainers difficulty in reading and understanding codes.
+    DeMorgan's Law can be useful in certain complex logical operations, but using it in simple conditional statements might make the code harder to read and understand.
+    Instead I prefer to use the ternary operator.
+
+    int isWithCream(char cream)
+    {
+        return (cream == 'y' || cream == 'Y') ? 1 : 0;
+    }

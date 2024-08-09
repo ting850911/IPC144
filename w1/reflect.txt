@@ -1,0 +1,27 @@
+###########################################################################
+                              Reflection
+                             Workshop - #1
+Full Name  : YUN TING WANG
+Student ID#: 148817232
+Email      : ytwang4@myseneca.ca
+Section    : NAA
+
+Authenticity Declaration:
+
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+###########################################################################
+
+1. I used to work as a frontend engineer, so I mainly wrote JavaScript. 
+  However, when I first started learning programming, I used Java, 
+  so I find C quite similar to Java, except for the differences in call by reference and pointers.
+
+2. The compiling process of turning a C text file into an executable program involves 
+  the use of a compiler to translate the higher-level C code into machine language (0 and 1), 
+  which can then be executed directly by the computer.
+
+3. In this course, I hope to gain a deeper understanding of backend operations. 
+  I don't wanna restrict myself to just front-end development.
+  Although I have experience with Java, it's been a while since I've used it,
+  so starting from the beginning will also serve as a good refresher.

@@ -1,0 +1,66 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #4
+Full Name  : Nina Wang
+Student ID#: 148817232
+Email      : ytwang4@myseneca.ca
+Section    : NAA
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1.
+  the choice between while and do/while depends on whether you need the loop to potentially skip execution entirely (while)
+  or whether you need it to run at least once regardless of the initial condition (do/while)
+
+2.
+  ```if (portion < 1)
+  {
+      printf("ERROR: You must pick at least 1!\n");
+  }
+  else if (portion > oranges)
+  {
+      printf("You picked too many... only %d more %s(S) are needed.\n", oranges, fruits[i]);
+  }
+  else
+  {
+      oranges -= portion;
+      if (oranges == 0)
+      {
+          printf("Great, that's the %ss done!\n\n", toLowerCase(fruits[i]));
+          i++;
+          break;
+      }
+      else
+      {
+          printf("Looks like we still need some %s...\n", fruits[i]);
+      }
+  }```
+  1.Error condition: When the user picks less than 1 fruit.
+  2.Too many fruits picked: When the user picks more fruits than available.
+  3.Valid input: When the user picks a valid number of fruits.
+
+  Using the if/else if alternative path construct is more efficient in scenarios 
+  where only one condition should be executed out of multiple mutually exclusive conditions. 
+  It prevents unnecessary checks, making the program run faster and more efficiently.
+
+3.
+  1. Consistent Indentation
+      Indentation helps to visually separate different blocks of code. 
+      In this workshop, I used consistent indentation to clearly demarcate loops, conditionals, and nested blocks.
+
+  2. Meaningful Variable Names
+     Using meaningful and descriptive variable names makes the code self-explanatory. 
+
+  3. Logical Grouping
+     Grouping related logic together improves readability. 
+
+  4. Clear Separation of Concerns
+     Each part of the code does one thing and does it well. 
+     The iteration logic (do/while loop) handles repeated prompts, while the selection logic (if/else if statements) handles the decision-making process.
+
+  5. Function Usage for Repetitive Tasks
+     If there were repetitive tasks or blocks of code, encapsulating them into functions would reduce redundancy and improve readability.

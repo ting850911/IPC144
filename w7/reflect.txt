@@ -1,0 +1,56 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #7
+Full Name  : Nina Wang
+Student ID#: 148817232
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+1. If structures were not used in this workshop, this would impact how you manage the data. To help contrast the
+differences, first:
+a) Copy the structure definitions from your code into this file then,
+  struct PlayerInfo
+{
+    int lives;
+    char symbol;
+    int treasures;
+    int pastPositions[MAX_LENGTH];
+};
+
+struct GameInfo
+{
+    int moves;
+    int pathLength;
+    int bombArr[MAX_LENGTH];
+    int treasureArr[MAX_LENGTH];
+};
+
+struct BoardInfo
+{
+    char symbol;
+};
+b) Copy the variable declaration section of your code into this file.
+  struct PlayerInfo player = {};
+    struct GameInfo game = {};
+    int i, j, playerPosition;
+
+Now, revise the code for only for the variable declaration section (b) above, to demonstrate what you would have to do to make your solution work without structures.
+    int playerLives;
+    char playerSymbol;
+    int playerTreasures;
+    int playerPastPositions[MAX_LENGTH];
+    int gameMoves;
+    int gamePathLength;
+    int gameBombArr[MAX_LENGTH];
+    int gameTreasureArr[MAX_LENGTH];
+    char boardSymbol;
+    int i, j, playerPosition;
+2. Parallel arrays were used in this workshop. Identify the parallel arrays (refer to your code) and, explain the relationship between these arrays and how they contributed to your solution.
+    The parallel arrays are game.bombArr and game.treasureArr. The bombArr array stores the bomb positions in the game, where a value of 1 represents a bomb and 0 represents no bomb. The treasureArr array stores the treasure placements in the game, where a value of 1 represents a treasure and 0 represents no treasure. These arrays are used to determine the presence of bombs and treasures at specific positions in the game. By using parallel arrays, the program can easily track the bomb and treasure placements and check for their presence during gameplay.
+3. Examine your part-2 code and identify the line number where the first deepest nested statement is located. Copy this statement into this file. Provide an explanation of the complete logic required to lead for that statement to be executed.
+    The first deepest nested statement is located in the do-while loop that checks if the player has been to a specific position before. The statement is:
+    if (player.pastPositions[playerPosition] != 1)
+    This statement checks if the player has visited the current position before by accessing the pastPositions array using the playerPosition as the index. If the player has not visited the position before, the statement evaluates to true, and the player can proceed to make a move. If the player has visited the position before, the statement evaluates to false, and the player is prompted with a message indicating that they have been to that position before.

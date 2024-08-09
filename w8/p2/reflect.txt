@@ -1,0 +1,33 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #8
+Full Name  : Nina Wang
+Student ID#: 148817232
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. In this workshop, you have the “convertLbsKg” function. This function returns one value in two different ways. 
+Explain how each return method works. 
+  Return by Value:
+  The function returns the value of the calculation of the weight in kilograms.
+  Return by Reference:
+  The function assigns the value of the calculation of the weight in kilograms to the variable that is passed by reference.
+If we wanted to revise this function so it doesn’t provide two ways to return a value, and instead, break this out into two separate functions, what would each function prototype look like?
+  double convertLbsToKg(const double *lbs);
+  bool convertLbsToKgPtr(const double *lbs, double *kg);
+
+2. Name a few functions in this workshop where they are highly cohesive and loosely coupled and explain why.
+  Highly cohesive functions:	getCatFoodInfo, displayCatFoodHeader, displayCatFoodData, calculateReportData, displayReportHeader, displayReportData, displayFinalAnalysis
+  They are all related to the same task of processing and displaying cat food data.
+  Loosely coupled functions:	start	
+  It calls other functions to perform specific tasks, but it does not rely on the internal implementation of those functions.
+
+3. You used a header (.h) file for the first time in this workshop. The header file also had a source code file (.c) to complement it where the function definitions were placed. 
+What are your thoughts on using this design and approach to manage the development of the application? 
+  I think using a header file and a source code file is a good approach to managing the development of the application.
+Provide specific references to the workshop to help you communicate your remarks.
+  Because it helps to separate the function prototypes from the function implementations.

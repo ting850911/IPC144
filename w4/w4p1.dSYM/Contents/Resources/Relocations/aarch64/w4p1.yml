@@ -1,0 +1,9 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/nina/Desktop/CPP/IPC/w4/w4p1'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003AD4, symSize: 0x1E4 }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003AD4, symSize: 0x1E4 }
+  - { offsetInCU: 0x77, offset: 0x77, size: 0x8, addend: 0x0, symName: _checkRange, symObjAddr: 0x234, symBinAddr: 0x100003D08, symSize: 0x68 }
+  - { offsetInCU: 0x9F, offset: 0x9F, size: 0x8, addend: 0x0, symName: _printChar, symObjAddr: 0x29C, symBinAddr: 0x100003D70, symSize: 0x7C }
+...

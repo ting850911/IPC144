@@ -1,0 +1,92 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #6
+Full Name  : Nina Wang
+Student ID#: 148817232
+Email      : ytwang4@myseneca.ca
+Section    : NAA
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1.
+  parallel arrays.
+  We use parallel arrays when we want to associate related data that belongs to the same entity but has different data types.
+  By using parallel arrays, we can easily access and manipulate the corresponding data elements by using the same index.
+
+  ```
+  int priority[MAX_ITEMS];
+  char financed[MAX_ITEMS];
+  double cost[MAX_ITEMS];
+  ```
+
+  In this example, we have three parallel arrays: priority, financed, and cost.
+  Parallel arrays provide a simple and efficient way to organize and manage related data, especially when the data types differ.
+
+2.
+  The most convenient iteration construct to use with Arrays is the for loop. 
+  I used a for loop to iterate through the array of items to display the details of each item.
+
+  ```
+  i = 0;
+  while (i < count)
+  {
+      printf("\nItem-%d Details:\n", i + 1);
+      do
+      {
+          printf("   Item cost: $");
+          scanf("%lf", &cost[i]);
+          if (cost[i] < minCost)
+          {
+              printf("      ERROR: Cost must be at least $%.2lf\n", minCost);
+          }
+      } while (cost[i] < minCost);
+      do
+      {
+          printf("   How important is it to you? [1=must have, 2=important, 3=want]: ");
+          scanf("%d", &priority[i]);
+          if (priority[i] < 1 || priority[i] > 3)
+          {
+              printf("      ERROR: Value must be between 1 and 3\n");
+          }
+      } while (priority[i] < 1 || priority[i] > 3);
+      do
+      {
+          printf("   Does this item have financing options? [y/n]: ");
+          scanf(" %c", &financed[i]);
+          if (financed[i] != 'y' && financed[i] != 'n')
+          {
+              printf("      ERROR: Must be a lowercase 'y' or 'n'\n");
+          }
+      } while (financed[i] != 'y' && financed[i] != 'n');
+      i++;
+  } 
+  ```
+
+  The for loop is the most convenient iteration construct to use with Arrays 
+  because it is more concise and easier to read than the while loop and do-while loop. 
+  The for loop allows you to initialize the loop variable, set the condition, and update the loop variable all in one line. 
+  The while loop and do-while loop require you to initialize the loop variable outside of the loop, 
+  set the condition before the loop, and update the loop variable inside the loop. 
+  The for loop is more efficient and less error-prone than the while loop and do-while loop when iterating through an array.
+
+3.
+  To test and debug the program, I followed the steps:
+
+  1. I compiled the code using a C compiler to check for any syntax errors. 
+     If there were any syntax errors, the compiler would provide error messages indicating the location of the errors.
+
+  2. I ran the program and provided different inputs to test its functionality. 
+     I made sure to test the program with both valid and invalid inputs to cover different scenarios.
+
+  3. While running the program, I carefully observed the output to check if it matched my expectations.
+     If the output was incorrect or unexpected, I used print statements to debug and trace the flow of the program.
+
+  4. I reviewed the code logic and compared it with the expected behavior to identify any semantic errors.
+     I paid close attention to the conditional statements, loops, and calculations to ensure they were implemented correctly.
+
+  5. If I encountered any errors or unexpected behavior, I used a step-by-step debugging technique.
+     This involved setting breakpoints at specific points in the code and using a debugger to track the program's execution and inspect variable values.
